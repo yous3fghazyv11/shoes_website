@@ -1,0 +1,185 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 8px 0 0 0;
+}
+
+.container {
+    width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Start products */
+
+
+.container .prod {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 250px;
+    height: 392px;
+    margin: 5px 5px 20px 5px;
+}
+
+.container .prod .text {
+    position: relative;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.container .prod .img {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(241 241 241);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.container .prod .img:hover {
+    filter: opacity(0.5);
+}
+
+.container .prod .img img {
+    width: 200px;
+}
+
+.container .prod .name {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.container .prod .price {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container .prod .price span {
+    font-size: 20px;
+}
+
+.container .prod p {
+    margin: 10px 0 10px;
+}
+
+.container .prod .text .star {
+    margin-bottom: 20px;
+}
+
+.container .prod .cart {
+    text-decoration: none;
+    color: black;
+    border: solid black 1px;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.container .prod .cart:hover {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+/* End products */
+
+/* Start image */
+
+.container .image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    background-image: url(../css/images/background.avif);
+    background-size: cover;
+    margin: 0 auto 25px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.image .home , .image .cart {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 35px;
+    top: 35px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    height: 40px;
+    width: 70px;
+    font-size: 20px;
+}
+
+.image .cart {
+    transform: translateX(100px);
+}
+
+.image .home:hover , .image .cart:hover {
+    transition: 0.15s;
+    color: rgb(204, 204, 204);
+}
+
+.container .rec {
+    position: relative;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 700px;
+}
+
+.container .rec::before {
+    content: "";
+    height: 8px;
+    width: 8px;
+    rotate: 45deg;
+    position: absolute;
+    left: -25px;
+    top: 16.68px;
+    background-color: black;
+}
+
+/* End image */
+/* Start brand */
+
+.type {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+}
+
+.type ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.type ul a {
+    text-decoration: none;
+    display: flex;
+    color: black;
+    margin: 0 28px;
+    font-size: 20px;
+    height: 35px;
+    width: 110px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px rgb(185 185 185);
+    padding-bottom: 5px;
+}
+
+.type ul a:hover {
+    border-bottom-color: black;
+}
+
+/* End brand */

@@ -1,0 +1,160 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Start main */
+
+.main {
+    height: 100vh;
+    width: 100%;
+}
+
+.main .shoes {
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    left: calc(50% - 250px);
+    top: calc(50% - 133px);
+}
+
+.main .nike {
+    font-size: 150px;
+    letter-spacing: 75px;
+    color: rgb(41, 41, 41);
+    position: absolute;
+    left: calc(50% - 486px);
+    top: 355px;
+}
+
+.main .nike span {
+    position: relative;
+    z-index: -1;
+}
+
+.main .sq {
+    width: 3000px;
+    height: 1000px;
+    rotate: 10deg;
+    background-color: rgb(59 101 102);
+    position: absolute;
+    top: -520px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 100px;
+    padding-top: 40px;
+    position: relative;
+}
+
+.nav img {
+    width: 70px;
+    height: 40.5px;
+    position: absolute;
+    left: 0px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 5px 40px;
+}
+
+/* End main */
+
+/* Start product */
+
+.container {
+    width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .prod {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 250px;
+    height: 392px;
+    margin: 5px 5px 20px 5px;
+}
+
+.container .prod .text {
+    position: relative;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.container .prod .img {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(241 241 241);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.container .prod .img:hover {
+    filter: opacity(0.5);
+}
+
+.container .prod .img img {
+    width: 200px;
+}
+
+.container .prod .name {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.container .prod .price {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container .prod .price span {
+    font-size: 20px;
+}
+
+.container .prod p {
+    margin: 10px 0 10px;
+}
+
+.container .prod .text .star {
+    margin-bottom: 20px;
+}
+
+.container .prod .cart {
+    text-decoration: none;
+    color: black;
+    border: solid black 1px;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.container .prod .cart:hover {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+/* End product */
